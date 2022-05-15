@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { ArticulosFamiliasComponent } from './articulos-familias/articulos-familias.component';
+import { MenuComponent } from './menu/menu.component';
 
 
 @NgModule({
@@ -26,8 +27,12 @@ import { ArticulosFamiliasComponent } from './articulos-familias/articulos-famil
     AppComponent, 
     HelloComponent, 
     InicioComponent, 
-    ArticulosFamiliasComponent 
+    ArticulosFamiliasComponent,
+    MenuComponent,
     ],
+  providers: [
+    { provide: APP_BASE_HREF, useValue: "/" }
+  ],
   bootstrap: [ 
     AppComponent 
     ]
