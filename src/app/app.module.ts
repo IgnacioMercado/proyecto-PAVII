@@ -10,6 +10,7 @@ import { HelloComponent } from './hello.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { ArticulosFamiliasComponent } from './articulos-familias/articulos-familias.component';
 import { MenuComponent } from './menu/menu.component';
+import { ArticulosComponent } from './articulos/articulos.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { MenuComponent } from './menu/menu.component';
     InicioComponent, 
     ArticulosFamiliasComponent,
     MenuComponent,
+    ArticulosComponent,
     ],
   providers: [
     { provide: APP_BASE_HREF, useValue: "/" }
